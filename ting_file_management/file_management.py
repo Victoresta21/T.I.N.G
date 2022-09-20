@@ -8,6 +8,6 @@ def txt_importer(path_file):
 
     if ".txt" not in path_file:
         return sys.stderr.write("Formato inválido\n")
-    
+
     with open(path_file, mode="r") as file:
         return file.read().split("\n")
